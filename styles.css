@@ -26,11 +26,16 @@ body.navbar-expanded {
     padding: 1rem;
     border-right: 1px solid #ddd; /* Optional: Add a border to separate it from the content */
     background-color: #f4f4f9; /* Ensure the navbar has a background */
-    margin-top: 56px; /* Adjust for fixed header */
+    margin-top: 0px; /* Adjust for fixed header */
     transform: translateX(-100%); /* Initially hide the navbar */
     transition: transform 0.3s ease; /* Smooth transition */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.navbar ul {
+    margin-top: 25%; /* Remove margin */
+}
 .navbar.show {
     transform: translateX(0); /* Slide the navbar into view */
 }
@@ -48,15 +53,18 @@ body.navbar-expanded {
 }
 
 .nav-link {
-    color: #007bff;
+    color: #576472;
     padding: 0.5rem 1rem;
     width: 100%; /* Full width for clickable area */
     text-align: left; /* Align text to the left */
 }
 
 .nav-link:hover {
-    background-color: #f8f9fa; /* Add a hover effect */
+    background-color: #abb6c1; /* Add a hover effect */
     color: #0056b3;
+    border-radius: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 /* Ensure the navbar collapses completely */
