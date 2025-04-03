@@ -60,8 +60,8 @@ body.navbar-expanded {
 }
 
 .nav-link:hover {
-    background-color: #abb6c1; /* Add a hover effect */
-    color: #0056b3;
+    background-color: #bababa; /* Add a hover effect */
+    color: #245128;
     border-radius: 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; /* Smooth transition */
@@ -90,6 +90,49 @@ body.navbar-expanded {
     opacity: 75%;
 
 }
+.material-icons.menu  {
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1050; /* Ensure it stays above other elements */
+    color: #245128;
+    
+    
+  }
+.material-icons.menu.collapsed:hover {
+    color:linear-gradient(45deg, #548257, #252424); 
+    border-radius: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  /* Change color when collapsed */
+.material-icons.menu.collapsed {
+    color: #ffffff; /* New color when collapsed */
+}
+  @media only screen and (max-width: 900px) {
+
+    .material-icons.menu {
+        font-size: 40px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1050; /* Ensure it stays above other elements */
+        color: white;
+    }
+ 
+ }
+ @media only screen and (max-width: 500px) {
+
+    .material-icons.menu {
+        font-size: 20px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1050; /* Ensure it stays above other elements */
+        color: white;
+    }
+ 
+ }
 
 /* Header styles */
 header {

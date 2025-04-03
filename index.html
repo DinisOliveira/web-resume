@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!-- Toggle Button -->
-    <button class="btn contacts-btn btn-primary mb-3 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarContainer" aria-expanded="false" aria-controls="navbarContainer">
+    <!-- <button class="btn contacts-btn btn-primary mb-3 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarContainer" aria-expanded="false" aria-controls="navbarContainer">
         Contacts
-    </button>
-
+    </button> -->
+    <i class="material-icons menu collapsed" data-bs-toggle="collapse" data-bs-target="#navbarContainer" aria-expanded="false" aria-controls="navbarContainer">menu</i>
     <!-- Collapsible Navbar -->
     <div class="collapse" id="navbarContainer">
         
@@ -110,7 +111,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const toggleButton = document.querySelector(".btn-primary");
+            const toggleButton = document.querySelector(".menu");
             const navbar = document.querySelector(".navbar");
             const body = document.body;
 
