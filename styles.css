@@ -106,17 +106,15 @@ body.navbar-expanded {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
   /* Change color when collapsed */
-.material-icons.menu.collapsed {
-    color: #ffffff; /* New color when collapsed */
-}
-  @media only screen and (max-width: 900px) {
+
+  /* @media only screen and (max-width: 900px) {
 
     .material-icons.menu {
         font-size: 40px;
         position: fixed;
         top: 10px;
         left: 10px;
-        z-index: 1050; /* Ensure it stays above other elements */
+        z-index: 1050; 
         color: white;
     }
  
@@ -128,15 +126,16 @@ body.navbar-expanded {
         position: fixed;
         top: 10px;
         left: 10px;
-        z-index: 1050; /* Ensure it stays above other elements */
+        z-index: 1050; 
         color: white;
     }
  
- }
+ } */
 
 /* Header styles */
 header {
-    background: linear-gradient(45deg, #2b442d, #000000); /* Gradient background */
+    /* background: linear-gradient(45deg, #2b442d, #000000); Gradient background */
+    background-color: none;
     color: rgb(110, 9, 9);
     padding: 1rem 0;
     text-align: center;
@@ -146,10 +145,15 @@ header h1 {
     margin: 0;
     font-size: 3rem;
     font-weight: bold;
+    color: rgb(110 111 110);
+    opacity: 90%;
 }
 
 header p {
     font-size: 1.25rem;
+    color:  #2c442e;
+    font-weight: bold;
+    opacity: 90%;
 }
 
 /* Section styles */
@@ -161,6 +165,40 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.container.my-5 #summary{
+    animation: slideIn 0.7s ease-out;
+}
+.container.my-5 #skills{
+    animation: slideOut 0.9s ease-in;
+}
+.container.my-5 #experience{
+    animation: slideIn 1s ease-out;
+}
+.container.my-5 #education{
+    animation: slideOut 1.3s ease-in;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0; /* Optional: Start invisible */
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1; /* Optional: End fully visible */
+    }
+}
+@keyframes slideOut {
+    from {
+        transform: translateX(100%);
+        opacity: 0; /* Optional: Start invisible */
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1; /* Optional: End fully visible */
+    }
+}
+
 
 /* Section headings */
 .mb-5 h2 {
@@ -188,13 +226,19 @@ section {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
 }
+.LocationDuration{
+    color: #4a7547;
+
+}
+
+.experience-skills{
+    font-weight: bold;
+}
 
 /* Footer styles */
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #f8f9fa;
-    color: #6c757d;
     margin-top: 2rem;
 }
 
@@ -205,4 +249,19 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.form-control #Inputmessage{
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+   
+   
+}
+.form-group {
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
 }
