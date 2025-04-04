@@ -356,3 +356,33 @@ footer a:hover {
         font-size: 0.9rem;
     }
  }
+
+ @media only screen and (max-width: 500px) {
+
+    .material-icons.menu {
+        font-size: 30px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1050; 
+        
+    }
+    .navbar { 
+    height: 250px; 
+    }
+
+    .navbar-nav  {
+        display: flex; /* Ensure each item spans the full width */
+        flex-direction: column; /* Stack items vertically */
+        
+    }
+    .nav-link  {
+        display: flex; /* Ensure each item spans the full width */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        
+    }
+    body.navbar-expanded {
+        margin-top: 60%; /* Push the body content to the right when navbar is visible */
+    }
+ }
