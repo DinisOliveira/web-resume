@@ -8,10 +8,13 @@ body {
     margin-left: 0; /* Default margin */
     transition: margin-left 0.3s ease; /* Smooth transition for body margin */
 }
+@media only screen and (min-width: 770px) {
+    body.navbar-expanded {
+        margin-left: 250px; /* Push the body content to the right when navbar is visible */
+    }
 
-body.navbar-expanded {
-    margin-left: 250px; /* Push the body content to the right when navbar is visible */
 }
+
 
 /* Vertical Navbar Styles */
 .navbar {
@@ -31,6 +34,7 @@ body.navbar-expanded {
     transition: transform 0.3s ease; /* Smooth transition */
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
 }
 
 .navbar ul {
@@ -100,11 +104,11 @@ body.navbar-expanded {
     
     
   }
-.material-icons.menu.collapsed:hover {
+/* .material-icons.menu.collapsed:hover {
     color:linear-gradient(45deg, #548257, #252424); 
     border-radius: 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
   /* Change color when collapsed */
 
   /* @media only screen and (max-width: 900px) {
@@ -169,13 +173,13 @@ section {
     animation: slideIn 0.7s ease-out;
 }
 .container.my-5 #skills{
-    animation: slideOut 0.9s ease-in;
+    animation: slideOut 0.7s ease-in;
 }
 .container.my-5 #experience{
-    animation: slideIn 1s ease-out;
+    animation: slideIn 0.9s ease-out;
 }
 .container.my-5 #education{
-    animation: slideOut 1.3s ease-in;
+    animation: slideOut 1s ease-in;
 }
 
 @keyframes slideIn {
@@ -265,3 +269,90 @@ footer a:hover {
     padding: 0.5rem;
     width: 100%;
 }
+
+.contact-me  {
+    --bs-btn-bg: #7b7c7c;
+    --bs-btn-hover-bg: #557052;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-border-color: none;
+   
+}
+
+.container.my-5 #contact_form{
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0; /* Optional: Start invisible */
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1; /* Optional: End fully visible */
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .material-icons.menu {
+        font-size: 40px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1050; 
+        
+    }
+    .navbar { /* Set a fixed width for the navbar */
+    width: 100%; /* Full width */
+    height: 120px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    transform: translateY(-100%); /* Initially hide the navbar */
+    transition: transform 0.3s ease; /* Smooth transition */
+    font-size: 1rem;
+    }
+    .navbar.show {
+        transform: translateY(0); /* Slide the navbar into view */
+    }
+    .navbar-nav  {
+        display: flex; /* Ensure each item spans the full width */
+        flex-direction: row; /* Stack items vertically */
+        
+    }
+    .navbar ul {
+        margin-top: 0%; /* Remove margin */
+    }
+    body.navbar-expanded {
+        margin-top: 20%; /* Push the body content to the right when navbar is visible */
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(110 111 110);
+        opacity: 100%;
+    }
+    header p {
+        font-size: 0.75rem;
+        color:  #2c442e;
+        font-weight: bold;
+        opacity: 100%;
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+        font-size: 0.8rem;
+    }
+
+    #skills ul li {
+        margin-bottom: 0.3rem;
+        color: #101a0f;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+    }
+ }
