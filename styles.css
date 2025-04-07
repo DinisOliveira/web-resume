@@ -386,3 +386,30 @@ footer a:hover {
         margin-top: 60%; /* Push the body content to the right when navbar is visible */
     }
  }
+
+ #profile-pic  {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition */
+
+}
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20%;
+    
+}
+
+.about-me {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
