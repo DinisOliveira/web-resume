@@ -387,13 +387,14 @@ footer a:hover {
     }
  }
 
- #profile-pic  {
-    width: 500px;
-    height: 500px;
+ .profile-pic {
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; /* Smooth transition */
+    margin-left: 2%;
+    margin-top: 0;
 
 }
 .profile-container {
@@ -401,15 +402,168 @@ footer a:hover {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-left: 10%;
     
 }
 
-.about-me {
+.container-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 0;
+    align-items: center;
+
+}
+
+.name {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(110 111 110);
+    opacity: 90%;
+    margin-top: 0;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
     text-align: justify;
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 15%;
 }
+
+
+.about-me-container  :nth-child(1){
+    animation: slideIn 1s ease-out;
+}
+.about-me-container  :nth-child(2){
+    animation: slideOut 2s ease-out;
+}
+.about-me-container  :nth-child(3){
+    animation: slideIn 3s ease-out;
+}
+.about-me-container  :nth-child(4){
+    animation: slideOut 1s ease-in;
+}
+.about-me-container  :nth-child(5){
+    animation: slideOut 1s ease-in;
+}
+
+.container-scroll {
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;;
+}
+
+.fullscreenslide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    background: linear-gradient(45deg, #2b442d, #000000);
+    
+}
+
+.fullscreenslide h2 {
+    font-size: 35px;
+    font-weight: 300;
+    max-width: 600px;
+    text-align: center;
+    color: rgb(226, 222, 222);
+}
+
+.slide1-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 600px;
+    text-align: center;
+    color: rgb(207, 207, 207);
+    gap: 20px;
+}
+
+.slide1-text h1 {
+    color: #ffffff;
+}
+
+.slide1-text h2 {
+    text-align: center;
+    font-style: bold;
+}
+
+
+.slide1 {
+    background: linear-gradient(to right, #2f4f4f, #556b2f); /* Smooth deep green-grey */
+    flex-direction: column;
+}
+
+.slide2 {
+    background: linear-gradient(to right, #3a554c, #4c5c55); /* Transitioning grey-green tones to align better with slide 1 */
+}
+
+.slide3 {
+    
+    background: linear-gradient(to right, #24352f, #384f3f); /* Earthy and harmonious greens */
+}
+
+.slide4 {
+    
+    background: linear-gradient(to right, #2f4f4f, #34495e); /* Cohesive blend of greens and greys */
+}
+
+.slide5 {
+    background: linear-gradient(to right, #aec1d8, #c9c9c9);
+    /* Light grey with a hint of blue for a fresh look */
+}
+
+.slide1 h2 {
+    color: #edfdef; /* Light text for strong contrast on dark green-grey */
+}
+
+.slide2 h2 {
+    color: #f1faf2; /* Softer light grey for balance with the darker greys */
+}
+
+.slide3 h2 {
+    color: #ecf1ea; /* Subtle light tone to contrast with the earthy greens */
+}
+
+.slide4 h2 {
+    color: #f0f2f5; /* Slightly brighter for clarity over deep grey-green blend */
+}
+
+.slide5 h2 {
+    color: #f1f9ff; /* Neutral dark grey for contrast with the light grey background */
+}
+
+.material-icons.menu.about-me.collapsed {
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1050; /* Ensure it stays above other elements */
+    color: #0c0c0c;
+    
+    
+  }
+  .Dinisoliveiranobg {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: #dedee3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
