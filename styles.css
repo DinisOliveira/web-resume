@@ -7,6 +7,9 @@ body {
     line-height: 1.6;
     margin-left: 0; /* Default margin */
     transition: margin-left 0.3s ease; /* Smooth transition for body margin */
+    min-width: 300px;
+    min-height: 100vh; /* Ensure the body takes full height */
+    scroll-behavior: smooth;
 }
 @media only screen and (min-width: 770px) {
     body.navbar-expanded {
@@ -462,7 +465,9 @@ footer a:hover {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1rem;;
+    font-size: 1rem;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .fullscreenslide {
@@ -474,17 +479,27 @@ footer a:hover {
     gap: 50px;
     color: #fff;
     background: linear-gradient(45deg, #2b442d, #000000);
+    scroll-snap-align: start;
+    
     
 }
 
 .fullscreenslide h2 {
-    font-size: 35px;
+    font-size: calc(1.375rem + 1.5vw);
     font-weight: 300;
     max-width: 600px;
     text-align: center;
     color: rgb(226, 222, 222);
 }
+.fullscreenslide h2 span {
+    opacity: 0.2;
+    transition: all 0.1ms ease;
+}
 
+.fullscreenslide h2 span.fade {
+    opacity: 1;
+
+}
 .slide1-text {
     display: flex;
     flex-direction: column;
@@ -547,7 +562,7 @@ footer a:hover {
 }
 
 .slide5 h2 {
-    color: #f1f9ff; /* Neutral dark grey for contrast with the light grey background */
+    color: #fafdff; /* Neutral dark grey for contrast with the light grey background */
 }
 
 .material-icons.menu.about-me.collapsed {
@@ -567,3 +582,4 @@ footer a:hover {
     background: #dedee3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
