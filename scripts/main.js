@@ -52,3 +52,30 @@ const observer = new IntersectionObserver(
 fullscreenslideHeaders.forEach((header) => {
     observer.observe(header);
 });
+
+//Contact form
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async function (e) {
+        e.preventDefault(); // stop default reload
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                formStatus.innerHTML = '<div class="alert alert-success">Message sent successfully!</div>';
+                contactForm.reset();
+            } else {
+                formStatus.innerHTML = '<div class="alert alert-danger">Oops! Something went wrong.</div>';
+            }
+        } catch (error) {
+            formStatus.innerHTML = '<div class="alert alert-danger">Network error. Please try again later.</div>';
+        }
+    });
+}
