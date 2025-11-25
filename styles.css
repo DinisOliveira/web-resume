@@ -107,37 +107,6 @@ body {
     
     
   }
-/* .material-icons.menu.collapsed:hover {
-    color:linear-gradient(45deg, #548257, #252424); 
-    border-radius: 5%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-  /* Change color when collapsed */
-
-  /* @media only screen and (max-width: 900px) {
-
-    .material-icons.menu {
-        font-size: 40px;
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 1050; 
-        color: white;
-    }
- 
- }
- @media only screen and (max-width: 500px) {
-
-    .material-icons.menu {
-        font-size: 20px;
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 1050; 
-        color: white;
-    }
- 
- } */
 
 /* Header styles */
 header {
