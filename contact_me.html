@@ -27,10 +27,8 @@
         <nav class="navbar navbar-light flex-column">
             <div class="container my-5">
                 <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="DinisOliveira.html">About me</a></li>
                     <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Linkedin</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">GitHub</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Email</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#education">Education</a></li> -->
                 </ul>
             </div>
@@ -43,17 +41,17 @@
     <div class="container my-5">
 
         <section id="contact_form">
-        <form>
+        <form action="https://formspree.io/f/mqaogzjz" method="POST">
             <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" name="email" class="form-control" placeholder="Enter email" required>
             </div>
-            
+
             <div class="form-group">
-                <label for="Inputmessage"></label>
-                <textarea class="form-control" id="Inputmessage" rows="5" placeholder="How can I help you?"></textarea>
+                <textarea name="message" class="form-control" rows="5" placeholder="How can I help you?" required></textarea>
             </div>
+
             <div class="form-group">
-            <button type="submit" class="contact-me btn btn-primary">Get in touch</button>
+                <button type="submit" class="contact-me btn btn-primary">Get in touch</button>
             </div>
         </form>
 
