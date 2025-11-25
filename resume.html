@@ -11,10 +11,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <!-- Toggle Button -->
-    <!-- <button class="btn contacts-btn btn-primary mb-3 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarContainer" aria-expanded="false" aria-controls="navbarContainer">
-        Contacts
-    </button> -->
     <i class="material-icons menu collapsed" data-bs-toggle="collapse" data-bs-target="#navbarContainer" aria-expanded="false" aria-controls="navbarContainer" onClick="toggleMenu()">menu</i>
     <!-- Collapsible Navbar -->
     <div class="collapse" id="navbarContainer">
@@ -23,7 +19,6 @@
             <div class="container my-5">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">About me</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#education">Education</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="contact_me.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -38,17 +33,6 @@
     </header>
 
     <div class="container my-5">
-        <!-- <section id="summary" class="mb-5 ">
-            <h2>Core:</h2>
-            <p>
-                I’m a Software Developer specializing in web scraping, data pipelines, and automation. 
-                <br> With a strong professional background in data analysis and process optimization, I develop scalable solutions to extract, transform, and analyze data efficiently.
-                <br> My experience includes building web crawlers, automating data processes, and creating user-friendly applications for data visualization and reporting.
-                <br> I am passionate about leveraging technology to drive data-driven decision-making and enhance business performance.
-                <br> Proficient in Python, I like to leverage various tools to deliver data-driven insights. Passionate about building robust data solutions, I thrive at the intersection of software development and analytics.
-            </p>
-        </section> -->
-
         <section id="skills" class="mb-5 ">
             <h2>Core Expertise</h2>
             <div class="row">
@@ -124,18 +108,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggleButton = document.querySelector(".menu");
-            const navbar = document.querySelector(".navbar");
-            const body = document.body;
-
-            toggleButton.addEventListener("click", function () {
-                navbar.classList.toggle("show");
-                body.classList.toggle("navbar-expanded");
-            });
-        });
-    </script> -->
     <script src="scripts/main.js"></script>
 </body>
 </html>
